@@ -91,12 +91,37 @@ body {
   align-items: center;
 }
 
+.hero-meta,
+.section-head-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.hero-meta {
+  margin-bottom: 12px;
+}
+
 .eyebrow {
   font-size: 0.85rem;
   letter-spacing: 0.1em;
   text-transform: uppercase;
   color: var(--muted);
-  margin-bottom: 12px;
+  margin-bottom: 0;
+}
+
+.coming-soon-pill {
+  display: inline-flex;
+  align-items: center;
+  padding: 3px 11px;
+  font-size: 0.75rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  border-radius: 999px;
+  background: var(--surface-alt);
+  color: var(--text);
+  border: 1px solid var(--border);
 }
 
 h1 {
@@ -122,6 +147,7 @@ h1 {
   display: flex;
   gap: 12px;
   flex-wrap: wrap;
+  align-items: center;
 }
 
 .btn {
@@ -145,6 +171,16 @@ h1 {
   background: var(--surface);
   color: var(--text);
   border: 1px solid var(--border);
+}
+
+.status-tag {
+  display: inline-block;
+  padding: 11px 16px;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  color: var(--muted);
+  background: var(--surface-alt);
+  border: 1px dashed var(--border);
 }
 
 .hero-visual {
@@ -342,6 +378,14 @@ h1 {
   margin-bottom: 18px;
 }
 
+.section-head-row h2 {
+  margin-bottom: 0;
+}
+
+.section-head-row {
+  margin-bottom: 18px;
+}
+
 .section p + p {
   margin-top: 14px;
 }
@@ -399,6 +443,8 @@ h1 {
     text-align: center;
   }
 
+  .hero-meta,
+  .section-head-row,
   .cta-row {
     justify-content: center;
   }
