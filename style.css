@@ -47,15 +47,6 @@ body {
     linear-gradient(150deg, #e5edf3 0%, #c6d5e1 52%, #a6bacb 100%);
 }
 
-.pro-backdrop::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: url("front page.jpeg") center / cover no-repeat;
-  opacity: 0.18;
-  filter: saturate(0.75) contrast(1.06);
-}
-
 .mist-wave {
   position: absolute;
   border-radius: 50%;
@@ -207,9 +198,8 @@ body {
   justify-content: center;
   padding: 4.5rem 5% 3rem;
   background:
-    radial-gradient(circle at 78% 45%, rgba(36, 54, 69, 0.28), transparent 58%),
-    linear-gradient(115deg, rgba(244, 248, 250, 0.84) 0%, rgba(214, 226, 235, 0.66) 55%, rgba(24, 36, 47, 0.45) 100%),
-    url("front page.jpeg") center 60% / cover no-repeat;
+    radial-gradient(circle at 78% 45%, rgba(36, 54, 69, 0.24), transparent 58%),
+    linear-gradient(115deg, rgba(244, 248, 250, 0.88) 0%, rgba(214, 226, 235, 0.76) 55%, rgba(164, 184, 201, 0.68) 100%);
 }
 
 .hero-grid {
@@ -360,18 +350,9 @@ body {
   background: linear-gradient(180deg, #c2cfd9 0%, #869ba9 58%, #2d3c48 100%);
 }
 
-.book-front-face img {
-  position: relative;
-  z-index: 2;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block;
-}
-
-/* Fallback / Art Cover Layer */
+/* Cover Art Layer */
 .book-art-layer {
-  display: none;
+  display: flex;
   position: relative;
   z-index: 1;
   width: 100%;
@@ -382,15 +363,11 @@ body {
   text-align: center;
 }
 
-.has-fallback .book-art-layer {
-  display: flex;
-}
-
 .front-art {
   background:
-    radial-gradient(circle at 50% 62%, rgba(255, 255, 255, 0.42), transparent 48%),
-    linear-gradient(180deg, #b9c8d3 0%, #8398a8 52%, #2c3b47 100%);
-  color: #1c2832;
+    radial-gradient(circle at 50% 62%, rgba(255, 255, 255, 0.48), transparent 52%),
+    linear-gradient(180deg, #c6d3dd 0%, #8aa0b0 54%, #2c3b47 100%);
+  color: #16212a;
 }
 
 .cover-title-stack {
@@ -537,6 +514,7 @@ body {
   border-radius: 99px;
   backdrop-filter: blur(12px);
   box-shadow: 0 10px 24px rgba(13, 20, 27, 0.08);
+  text-align: center;
 }
 
 .scroll-indicator {
@@ -614,22 +592,21 @@ body {
   overflow: hidden;
   box-shadow: 0 28px 56px rgba(8, 13, 18, 0.48);
   border: 1px solid rgba(255, 255, 255, 0.16);
-  background: var(--ink-900);
-}
-
-.horizon-frame img {
-  width: 100%;
-  height: 380px;
-  object-fit: cover;
-  display: block;
+  background: linear-gradient(155deg, #2b3f4f 0%, #16222c 100%);
+  min-height: 220px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
 }
 
 .horizon-caption {
-  padding: 1rem 1.25rem;
+  padding: 1.35rem 1.5rem;
   background: rgba(14, 22, 30, 0.92);
   display: flex;
   justify-content: space-between;
   align-items: center;
+  gap: 0.75rem;
+  flex-wrap: wrap;
   font-size: 0.82rem;
 }
 
@@ -725,15 +702,6 @@ body {
   pointer-events: auto;
 }
 
-.cover-card img {
-  position: relative;
-  z-index: 2;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block;
-}
-
 .book-details h3 {
   font-family: var(--font-serif);
   font-size: 1.85rem;
@@ -780,15 +748,6 @@ body {
   flex-direction: column;
   align-items: flex-start;
   gap: 0.6rem;
-}
-
-.helper-note {
-  font-size: 0.78rem;
-  color: var(--text-soft);
-}
-
-.helper-note.light {
-  color: var(--stone-300);
 }
 
 /* Writing Section */
@@ -869,8 +828,7 @@ body {
 .contact-box {
   background:
     radial-gradient(circle at 85% 20%, rgba(132, 158, 178, 0.26), transparent 55%),
-    linear-gradient(125deg, rgba(16, 25, 33, 0.92) 0%, rgba(36, 51, 64, 0.88) 100%),
-    url("backpage.jpeg") center / cover no-repeat;
+    linear-gradient(125deg, #101921 0%, #243340 100%);
   color: var(--stone-50);
   border-radius: 18px;
   border: 1px solid rgba(255, 255, 255, 0.15);
@@ -977,9 +935,9 @@ body {
   }
 
   .book-3d {
-    width: 240px;
-    height: 350px;
-    transform: rotateY(-14deg);
+    width: 235px;
+    height: 340px;
+    transform: rotateY(-12deg);
   }
 
   .header-cta {
