@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Official website of Abhi Danoch, author of The Art of Being — A quiet, transformative guide for the modern soul." />
+  <meta name="author" content="Abhi Danoch" />
+  <meta name="theme-color" content="#101820" />
+  <title>Abhi Danoch | Author of The Art of Being</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css?v=4" />
+</head>
+<body>
+  <div class="pro-backdrop" aria-hidden="true">
+    <div class="mist-wave wave-one"></div>
+    <div class="mist-wave wave-two"></div>
+    <div class="editorial-grid-lines"></div>
+  </div>
+
+  <header class="site-header" id="top">
+    <a class="brand" href="#home" aria-label="Abhi Danoch home">
+      <span class="brand-name">Abhi Danoch</span>
+      <span class="brand-tag">AUTHOR · THINKER · WRITER</span>
+    </a>
+
+    <button class="menu-toggle" aria-label="Open navigation" aria-expanded="false">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+    <nav class="navigation" aria-label="Main navigation">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#book">Book</a>
+      <a href="#writing">Reflections</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <a class="header-cta" href="mailto:abhidanoch76@gmail.com">Get in touch <span>↗</span></a>
+  </header>
+
+  <main>
+    <!-- HERO SECTION -->
+    <section class="hero" id="home">
+      <div class="hero-grid">
+        <div class="hero-content reveal">
+          <p class="eyebrow">A JOURNEY WITHIN</p>
+          <h1 class="hero-title">The Art <em>of Being</em></h1>
+          <p class="hero-mantra">YOU ARE NOT LOST. YOU ARE SIMPLY LOOKING IN THE WRONG DIRECTION.</p>
+          <p class="hero-copy">
+            Hey, I’m <strong>Abhi Danoch</strong> — a writer and thinker dedicated to mindfulness, self-discovery, and the quiet beauty of returning to yourself.
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#book">Explore the Book <span>→</span></a>
+            <a class="btn btn-glass" href="#about">About the Author</a>
+          </div>
+        </div>
+
+        <!-- 3D Hardcover Book Showcase -->
+        <div class="hero-book-stage reveal">
+          <div class="book-3d-wrapper" id="heroBook3D">
+            <div class="book-3d">
+              <div class="book-spine">
+                <span>THE ART OF BEING — ABHI DANOCH</span>
+              </div>
+
+              <div class="book-front-face has-fallback" id="heroBookFront">
+                <img
+                  src="front page.jpeg"
+                  alt="The Art of Being Front Cover"
+                  onload="this.parentElement.classList.add('loaded'); this.parentElement.classList.remove('has-fallback');"
+                  onerror="this.remove();"
+                />
+                <div class="book-art-layer front-art">
+                  <div class="cover-title-stack">
+                    <span class="c-small">The</span>
+                    <strong class="c-art">Art</strong>
+                    <span class="c-sub">of Being</span>
+                  </div>
+                  <p class="c-tagline">YOU ARE NOT LOST. YOU ARE SIMPLY<br>LOOKING IN THE WRONG DIRECTION.</p>
+                  <span class="c-author">ABHI DANOCH</span>
+                </div>
+                <div class="book-sheen"></div>
+              </div>
+
+              <div class="book-pages-edge"></div>
+            </div>
+          </div>
+          <p class="stage-caption">“A quiet, transformative guide for the modern soul.”</p>
+        </div>
+      </div>
+
+      <a class="scroll-indicator" href="#about">
+        <span>SCROLL TO PAUSE</span>
+        <div class="scroll-line"></div>
+      </a>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section class="about-section" id="about">
+      <div class="about-split reveal">
+        <div class="about-slate-panel">
+          <span class="section-kicker light">01 / ABOUT THE AUTHOR</span>
+          <h2>A little about <em>me.</em></h2>
+          <p class="lead">
+            Abhi Danoch is a writer and thinker dedicated to mindfulness, self-discovery, and the beauty of quiet reflection.
+          </p>
+          <p>
+            He lives and works near the coast, finding inspiration in the vast, untamed natural world. Through introspective wisdom and quiet observations, his writing invites you to step back from the noise and reconnect with who you already are.
+          </p>
+          <blockquote class="inline-quote">
+            “Stop searching outward and start looking within.”
+          </blockquote>
+        </div>
+
+        <div class="about-visual-panel">
+          <div class="horizon-frame">
+            <img
+              src="bg.jpeg"
+              alt="The Art of Being showcase"
+              onerror="this.src='front page.jpeg'; this.onerror=function(){this.style.display='none';};"
+            />
+            <div class="horizon-caption">
+              <span>ABHI DANOCH</span>
+              <small>Mindfulness · Stillness · Inner Clarity</small>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- BOOK SHOWCASE SECTION (Front & Back Cover) -->
+    <section class="book-section section-pad" id="book">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-kicker">02 / THE BOOK</span>
+          <h2>Inside <em>The Art of Being</em></h2>
+        </div>
+
+        <div class="book-showcase-grid">
+          <div class="interactive-covers reveal">
+            <div class="cover-tabs" role="tablist" aria-label="Switch book cover view">
+              <button class="cover-tab active" data-target="front" role="tab" aria-selected="true">Front Cover</button>
+              <button class="cover-tab" data-target="back" role="tab" aria-selected="false">Back Cover</button>
+            </div>
+
+            <div class="cover-display-stage">
+              <!-- Front Cover -->
+              <div class="cover-card active has-fallback" id="coverFront">
+                <img
+                  src="front page.jpeg"
+                  alt="The Art of Being Front Cover"
+                  onload="this.parentElement.classList.add('loaded'); this.parentElement.classList.remove('has-fallback');"
+                  onerror="this.remove();"
+                />
+                <div class="book-art-layer front-art">
+                  <div class="cover-title-stack">
+                    <span class="c-small">The</span>
+                    <strong class="c-art">Art</strong>
+                    <span class="c-sub">of Being</span>
+                  </div>
+                  <p class="c-tagline">YOU ARE NOT LOST. YOU ARE SIMPLY<br>LOOKING IN THE WRONG DIRECTION.</p>
+                  <span class="c-author">ABHI DANOCH</span>
+                </div>
+              </div>
+
+              <!-- Back Cover -->
+              <div class="cover-card has-fallback" id="coverBack">
+                <img
+                  src="backpage.jpeg"
+                  alt="The Art of Being Back Cover"
+                  onload="this.parentElement.classList.add('loaded'); this.parentElement.classList.remove('has-fallback');"
+                  onerror="this.remove();"
+                />
+                <div class="book-art-layer back-art">
+                  <h4 class="b-title">The Art of Being</h4>
+                  <p class="b-blurb">
+                    In a world that constantly demands we become someone else, we often lose sight of who we already are. <em>The Art of Being</em> is a gentle, profound exploration of returning to yourself. Through a blend of introspective wisdom, quiet observations, and mindful reflection, this book invites you to stop searching outward and start looking within.
+                  </p>
+                  <p class="b-quote">“A quiet, transformative guide for the modern soul.”</p>
+                  <div class="b-bio-box">
+                    <strong>Abhi Danoch</strong> is a writer and thinker dedicated to mindfulness, self-discovery, and the beauty of quiet reflection. He lives and works near the coast, finding inspiration in the vast, untamed natural world.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="book-details reveal">
+            <span class="eyebrow">AVAILABLE NOW</span>
+            <h3>A gentle, profound exploration of returning to yourself.</h3>
+            <p>
+              In a world that constantly demands we become someone else, we often lose sight of who we already are. <em>The Art of Being</em> is a gentle, profound exploration of returning to yourself.
+            </p>
+            <p>
+              Through a blend of introspective wisdom, quiet observations, and mindful reflection, this book invites you to stop searching outward and start looking within.
+            </p>
+
+            <div class="book-highlights">
+              <div class="highlight-item">
+                <strong>Introspective Wisdom</strong>
+                <span>Short, reflective chapters meant to be read slowly.</span>
+              </div>
+              <div class="highlight-item">
+                <strong>Mindful Clarity</strong>
+                <span>Practical stillness for an overwhelmed modern mind.</span>
+              </div>
+            </div>
+
+            <div class="book-cta-group">
+              <a class="btn btn-primary" href="YOUR_AMAZON_BOOK_LINK" target="_blank" rel="noopener">
+                Order on Amazon <span>↗</span>
+              </a>
+              <span class="helper-note">* Replace YOUR_AMAZON_BOOK_LINK before publishing</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- WRITING & REFLECTIONS -->
+    <section class="writing-section section-pad" id="writing">
+      <div class="container">
+        <div class="writing-top reveal">
+          <div>
+            <span class="section-kicker">03 / NOTES & REFLECTIONS</span>
+            <h2>Words, thoughts <em>& quiet observations.</em></h2>
+          </div>
+          <p>Essays and fragments on stillness, self-awareness, and the art of simply being present.</p>
+        </div>
+
+        <div class="writing-grid">
+          <article class="reflection-card reveal">
+            <span class="card-index">I</span>
+            <h3>On Looking in the Right Direction</h3>
+            <p>Why the answers we chase in distant places are often waiting quietly beneath our own restlessness.</p>
+            <span class="card-tag">REFLECTION · COMING SOON</span>
+          </article>
+
+          <article class="reflection-card reveal">
+            <span class="card-index">II</span>
+            <h3>On Returning to Yourself</h3>
+            <p>Unlearning the pressure to constantly become someone else, and making peace with who you already are.</p>
+            <span class="card-tag">ESSAY · COMING SOON</span>
+          </article>
+
+          <article class="reflection-card reveal">
+            <span class="card-index">III</span>
+            <h3>On Coastal Stillness</h3>
+            <p>Lessons in patience, depth, and letting go drawn from quiet horizons and untamed waters.</p>
+            <span class="card-tag">NOTE · COMING SOON</span>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section class="contact-section section-pad" id="contact">
+      <div class="container">
+        <div class="contact-box reveal">
+          <div class="contact-copy">
+            <span class="section-kicker light">04 / LET’S CONNECT</span>
+            <h2>Every good conversation<br>starts with <em>hello.</em></h2>
+            <p>For reader thoughts, reflections on the book, or literary inquiries, reach out directly.</p>
+          </div>
+          <div class="contact-action">
+            <a class="email-pill" href="mailto:abhidanoch76@gmail.com">abhidanoch76@gmail.com <span>↗</span></a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <a class="footer-brand" href="#home">Abhi Danoch</a>
+      <p>© <span id="year"></span> Abhi Danoch. All rights reserved.</p>
+      <a class="back-top" href="#home">Back to top ↑</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
